@@ -68,8 +68,14 @@ function drawLetter($letter, $color) {
 						$letterToDisplay = $letter;
 					}					
 					break;
-				case "K" :
-					if (1) {
+				case "K" :							      //$i rows   $j col
+					if( ($j == 0) ||				      //col0
+						($j == 1) ||					  //col1
+						($i == $j)&&($i > 2)&&($j > 3) || //bottom leg, top diagonal 
+					    ($i-1  == $j) ||			      //bottom leg, bottom diagonal 
+						(7-$i  == $j+1 ) || 		      //top leg, to diagonal
+						(7-$i  == $j)&&($i < 4)           //top leg, bottom diagonal
+						){
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
