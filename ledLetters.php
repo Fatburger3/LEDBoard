@@ -57,7 +57,7 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "I" :
-					if (1) {
+					if ($j ==3 || $j == 4) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -224,7 +224,16 @@ function drawLetter($letter, $color) {
 					}					
 					break;
 				case "8" :
-					if (1) {
+					if (($j == 0 || $j==1) || ($i ==0 || $i ==1)) {
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}
+					elseif(($j ==7 ||$j ==6) || ($i == 6 || $i ==7)){
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}
+					
+					elseif($i == 3 || $i ==4){
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
