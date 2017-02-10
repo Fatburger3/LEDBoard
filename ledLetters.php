@@ -21,7 +21,7 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "C" :
-					if (1) {
+					if (($i == 0 && $j > 1)||($i == 1 && $j == 1)||($i > 1 && $i < 6 && $j == 0)||($i == 6 && $j == 1)||($i == 7 && $j > 1)) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}					
