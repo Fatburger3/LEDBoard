@@ -101,8 +101,8 @@ function drawLetter($letter, $color) {
 				case "P" :
 					if (($j == 0 || $j == 1 || $i == 0 || $i==3) || (($i == 1 && $j == 7) || ($i == 2 && $j == 7))) {
 						if(!($i == 0 && $j == 7 ) && !($i == 3 && $j == 7 )){
-						$colorToDisplay = $color;
-						$letterToDisplay = $letter;
+							$colorToDisplay = $color;
+							$letterToDisplay = $letter;
 						}
 					}					
 					break;
