@@ -243,7 +243,7 @@ function drawLetter($letter, $color) {
 					elseif(($j ==7 ||$j ==6) || ($i == 6 || $i ==7)){
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
-					}
+					} 
 					
 					elseif($i == 3 || $i ==4){
 						$colorToDisplay = $color;
