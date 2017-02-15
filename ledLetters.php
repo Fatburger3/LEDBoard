@@ -222,10 +222,19 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "?" :
-					if (1) {
+					
+					if (
+						($i == 0 && ($j > 0 && $j < 7)) ||
+						(($i == 1 || $i == 2) && ($j < 2 || $j > 5)) ||
+						($i == 3 && ($j > 4 && $j < 7)) ||
+						($i == 4 && ($j > 3 && $j < 6)) ||
+						($i == 5 && ($j > 2 && $j < 5)) ||
+						($i == 7) && ($j > 2 && $j < 5)
+						
+					){
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
-					}					
+					}
 					break;
  				case "0" :
 					if (1) {
