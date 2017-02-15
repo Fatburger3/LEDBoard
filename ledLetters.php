@@ -168,11 +168,23 @@ function drawLetter($letter, $color) {
 						$letterToDisplay = $letter;
 					}
 				case "V" :
-					if (1) {
+					if ($i==3 &&  ($j== 1 || $j == 7)){
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
-					}					
-					break;
+					}
+					else if ($i == 4 && ($j == 2 || $j == 6)){
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}
+					else if ($i == 5 && ($j == 3 || $j == 5)){
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}
+					else if ($i == 6 && $j == 4){
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}
+					break; 
 				case "W" :
 					if (1) {
 						$colorToDisplay = $color;
