@@ -150,10 +150,10 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "S" :
-					if (1) {
-
-						$vowelToDisplay = $letter;
-
+					if ($i == 0 || $i == 3 || $i == 4 || $i == 7 || 
+						($i == 1 && $j == 0) || ($i == 2 && $j == 0) || 
+						($i == 5 && $j == 7) || ($i == 6 && $j == 7)) {
+						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
 					break;
