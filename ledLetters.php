@@ -181,7 +181,10 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "X" :
-					if (1){
+					if (($i == $j)&&($i > 2)&&($j > 3) || //top right diagonal 
+						(7-$i  == $j)&&($i < 4)||
+						($i == $j) ||
+						(7-$i == $j)){
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
