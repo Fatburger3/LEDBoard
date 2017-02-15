@@ -207,7 +207,7 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "Z" :
-					if (1) {
+					if ($i==0 || $i==7 || $j==7-$i) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
