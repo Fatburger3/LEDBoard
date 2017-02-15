@@ -263,12 +263,31 @@ function drawLetter($letter, $color) {
 						$letterToDisplay = $letter;
 					}
 					break;
-				case "5" :
-					if (1) {
-						$colorToDisplay = $color;
-						$letterToDisplay = $letter;
-					}		
+					case "5" :
+					
+						if ($i==0||$i==7) 
+						{
+							$colorToDisplay = $color;
+							$letterToDisplay = $letter;
+						}
+						if($j==0 && $i<4)
+						{
+							$colorToDisplay = $color;
+							$letterToDisplay = $letter;
+						}
+						if($j==7 && $i>4)
+						{
+							$colorToDisplay = $color;
+							$letterToDisplay = $letter;
+						}
+						if($i==4)
+						{
+							$colorToDisplay = $color;
+							$letterToDisplay = $letter;
+						}
+						
 					break;
+
 				case "6" :
 					if (1) {
 						if($i == 0 || $i == 1 || $i == 3 || $i == 4 || $i == 6 || $i == 7){
