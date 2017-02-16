@@ -156,7 +156,8 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "T" :
-					if (1) {
+					if (($j == 3 || $j == 4) || (($i == 0 && $j ==0) || ($i == 0 && $j ==0) || ($i == 0 && $j ==1) || ($i == 0 && $j ==2) || ($i == 0 && $j ==5) || ($i == 0 && $j ==6) || ($i == 0 && $j ==7)
+						|| ($i == 1 && $j ==0) || ($i == 1 && $j ==1) || ($i == 1 && $j ==2) || ($i == 1 && $j ==5) || ($i == 1 && $j ==6) || ($i == 1 && $j ==7))) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
