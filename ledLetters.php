@@ -5,7 +5,7 @@ function drawLetter($letter, $color) {
 	for ($i = 0; $i < 8; $i++) {//Controls rows
 		echo "<tr>";
 		for ($j = 0; $j < 8; $j++) {//Controls columns
-            $colorToDisplay = "white";
+            $colorToDisplay = "yellow";
 		    $letterToDisplay = "";
 			switch($letter) {
 				case "A" :
