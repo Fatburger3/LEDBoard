@@ -5,7 +5,7 @@ function drawLetter($letter, $color) {
 	for ($i = 0; $i < 8; $i++) {//Controls rows
 		echo "<tr>";
 		for ($j = 0; $j < 8; $j++) {//Controls columns
-            $colorToDisplay = "white";
+            $colorToDisplay = "yellow";
 		    $letterToDisplay = "";
 			switch($letter) {
 				case "A" :
@@ -48,7 +48,7 @@ function drawLetter($letter, $color) {
 					}					
 					break;
 				case "F" :
-					if (1) {
+					if (($i == 0 || $i == 3 || $i == 7 || $j == 0) && !($i > 5 && $j > 1)) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}	
@@ -182,7 +182,7 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "W" :
-					if (1) {
+					if (($i < 6 && $j == 0) || ($i < 6 && $j == 7) || ($i <= 6 && $j == 1) || ($i <= 6 && $j == 6) || ($i >= 6 && $j == 2) || ($i >= 6 && $j == 5) || ($i > 2 && $i != 7 && $j == 3) || ($i > 2 && $i != 7 && $j == 4)) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -285,7 +285,8 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "2" :
-				if ($i == 0 || $i == 1 || $j > 5 && $i <5 || $i ==3 || $i == 4 || $j < 2 && i >3 || $i == 7 || $i == 6 || $i== 5 && $j <2){
+				//if ($i == 0 || $i == 1 || $j > 5 && $i <5 || $i ==3 || $i == 4 || $j < 2 && i >3 || $i == 7 || $i == 6 || $i== 5 && $j <2)
+					if(!($i==2  && $j<6) && !($i ==5 && $j > 1)){
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}					
@@ -367,7 +368,15 @@ function drawLetter($letter, $color) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
-					break;					
+					break;
+				case ":" :
+					if(($j == 3 && $i == 0) || ($j == 4 && $i == 0) || ($j == 3 && $i == 1) || ($j == 4 && $i == 1) || ($j == 3 && $i == 7) || ($j == 4 && $i == 7) || ($j == 3 && $i == 6) || ($j == 4 && $i == 6)){
+					$colorToDisplay = $color;
+					$letterToDisplay = $letter;
+					} else {
+					$colorToDisplay = "#FFF";
+					$letterToDisplay = $letter;
+				}
 			}  //endSwitch
 			
 			if ($colorToDisplay == "rainbow") {
