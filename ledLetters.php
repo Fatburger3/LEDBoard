@@ -9,7 +9,7 @@ function drawLetter($letter, $color) {
 		    $letterToDisplay = "";
 			switch($letter) {
 				case "A" :
-					if (1) {
+					if ($j == 0 || $j == 7 || $i == 0 || $i == 3) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -40,7 +40,7 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "E" :
-					if ($i != 2 && $i != 5 || $j==0 || $j==1) {
+					if ($i == 0 || $i == 3 || $i == 7 || $j == 0) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}					
@@ -65,7 +65,7 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "H" :
-					if ($j==0||$j==7||$i==3) {
+					if ($j==0||$j==1||$j==6||$j==7||$i==3) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -143,7 +143,6 @@ function drawLetter($letter, $color) {
 					}					
 					break;
 				case "Q" :
-					
 					if ($i <= 1 || $i >= 6 || $j <= 1 || $j >= 6) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
@@ -164,8 +163,7 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "T" :
-					if (($j == 3 || $j == 4) || (($i == 0 && $j ==0) || ($i == 0 && $j ==0) || ($i == 0 && $j ==1) || ($i == 0 && $j ==2) || ($i == 0 && $j ==5) || ($i == 0 && $j ==6) || ($i == 0 && $j ==7)
-						|| ($i == 1 && $j ==0) || ($i == 1 && $j ==1) || ($i == 1 && $j ==2) || ($i == 1 && $j ==5) || ($i == 1 && $j ==6) || ($i == 1 && $j ==7))) {
+					if ($i == 0 || $j == 3 || $i == 1 || $j == 4) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -291,7 +289,8 @@ function drawLetter($letter, $color) {
 					}					
 					break;
 				case "3" :
-					if (($i < 1 && $j < 8) || ($i > 0 && $j > 6) || ($i > 6) || ($i == 4) || ($i == 3)){//top row
+					if (($i != 1 && $i != 2 && $i != 5 && $i !=6) || ($j == 7) ){//top row
+						//decreased by one condition
 						//colors and nums Jose Sainz
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
