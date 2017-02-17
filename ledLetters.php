@@ -323,7 +323,7 @@ function drawLetter($letter, $color) {
 					if (($i < 1 && $j < 8) || ($i > 0 && $j > 6) || ($i > 6) || ($i == 4) || ($i == 3)){//top row
 						//colors and nums Jose Sainz
 						$colorToDisplay = $color;
-						$letterToDisplay = "";
+						$letterToDisplay = $letter;
 						
 						
 						
