@@ -365,7 +365,15 @@ function drawLetter($letter, $color) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
-					break;					
+					break;
+				case ":" :
+					if(($j == 3 && $i == 0) || ($j == 4 && $i == 0) || ($j == 3 && $i == 1) || ($j == 4 && $i == 1) || ($j == 3 && $i == 7) || ($j == 4 && $i == 7) || ($j == 3 && $i == 6) || ($j == 4 && $i == 6)){
+					$colorToDisplay = $color;
+					$letterToDisplay = $letter;
+					} else {
+					$colorToDisplay = "#FFF";
+					$letterToDisplay = $letter;
+				}
 			}  //endSwitch
 			
 			if ($colorToDisplay == "rainbow") {
