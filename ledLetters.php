@@ -9,7 +9,7 @@ function drawLetter($letter, $color) {
 		    $letterToDisplay = "";
 			switch($letter) {
 				case "A" :
-					if (1) {
+					if (($i== 0 || $i==4 || $i==5 ) || ($j == 0 || $j == 1) || ($j==6 || $j==7)) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
