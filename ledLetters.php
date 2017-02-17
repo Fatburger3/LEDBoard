@@ -9,7 +9,7 @@ function drawLetter($letter, $color) {
 		    $letterToDisplay = "";
 			switch($letter) {
 				case "A" :
-					if (($i== 0 || $i==4 || $i==5 ) || ($j == 0 || $j == 1) || ($j==6 || $j==7)) {
+					if (1) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -65,7 +65,7 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "H" :
-					if ($j==0||$j==7||$i==3) {
+					if ($j==0||$j==1||$j==6||$j==7||$i==3) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -143,8 +143,7 @@ function drawLetter($letter, $color) {
 					}					
 					break;
 				case "Q" :
-					
-					if (($i <= 1 || $i >= 6 || $j <= 1 || $j >= 6) && !(($j == 0 && $i == 6) || ($j == 1 && $i == 7))){
+					if ($i <= 1 || $i >= 6 || $j <= 1 || $j >= 6) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -164,22 +163,11 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "T" :
-<<<<<<< HEAD
-					if ($j==3 || $j==4) 
-					{
-=======
 					if (($j == 3 || $j == 4) || (($i == 0 && $j ==0) || ($i == 0 && $j ==0) || ($i == 0 && $j ==1) || ($i == 0 && $j ==2) || ($i == 0 && $j ==5) || ($i == 0 && $j ==6) || ($i == 0 && $j ==7)
 						|| ($i == 1 && $j ==0) || ($i == 1 && $j ==1) || ($i == 1 && $j ==2) || ($i == 1 && $j ==5) || ($i == 1 && $j ==6) || ($i == 1 && $j ==7))) {
->>>>>>> 25d6e4ba0074635ee4fbb7a7db48fdf5726db0ca
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
-					if ($i==0 || $i==1)
-					{
-						$colorToDisplay = $color;
-						$letterToDisplay = $letter;
-					}
-					
 					break;
 				case "U" :
 					if (1) {
@@ -343,28 +331,7 @@ function drawLetter($letter, $color) {
 					
 					break;
 				case "4" :
-					if ($j==1 && $i<5)
-					{
-						$colorToDisplay = $color;
-						$letterToDisplay = $letter;
-					}
-					if ($j==2 && $i<5)
-					{
-						$colorToDisplay = $color;
-						$letterToDisplay = $letter;
-					}
-					if ($j==5 || $j==6)
-					{
-						$colorToDisplay = $color;
-						$letterToDisplay = $letter;
-					}
-					if ($i==4 && $j!=0)
-					{
-						$colorToDisplay = $color;
-						$letterToDisplay = $letter;
-					}
-					if ($i==5 && $j!=0)
-					{
+					if (1) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
