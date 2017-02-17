@@ -5,11 +5,11 @@ function drawLetter($letter, $color) {
 	for ($i = 0; $i < 8; $i++) {//Controls rows
 		echo "<tr>";
 		for ($j = 0; $j < 8; $j++) {//Controls columns
-            $colorToDisplay = "white";
+            $colorToDisplay = "black";
 		    $letterToDisplay = "";
 			switch($letter) {
 				case "A" :
-					if (1) {
+					if ($j == 0 || $j == 7 || $i == 0 || $i == 3) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -33,7 +33,7 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "E" :
-					if (1) {
+					if ($i == 0 || $i == 3 || $i == 7 || $j == 0) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}					
@@ -153,15 +153,13 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "S" :
-					if (1) {
-
-						$vowelToDisplay = $letter;
-
+					if ($i == 0 || $i == 7 || ($j == 0 && $i < 4) || $i == 3 || ($j == 7 && $i > 3)) {
+						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
 					break;
 				case "T" :
-					if (1) {
+					if ($i == 0 || $j == 3 || $j == 4) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
